@@ -48,6 +48,15 @@ ul.city_list{
 		margin-bottom:5px;
 		*/
 	}
+	ul.city_list li.weather{	
+	    border-bottom: 1px solid #E2E2E2;
+		height:45px;
+		line-height:20px;
+	}
+	ul.city_list li.weather img{
+		float:left;
+		margin-right:5px;
+	}
 	ul.city_list li a{
 		padding-left:15px;
 		display:block;
