@@ -1,0 +1,139 @@
+body{
+	font: 11px "lucida grande",tahoma,verdana,arial,sans-serif;
+}
+a{
+	text-decoration:none;
+	color:#3B5998;
+}
+h1{
+	color:#3B5998;
+}
+#header ul{
+	margin:0px;
+	padding:0px;
+	list-style:none;
+	margin-bottom:40px;
+}
+	#header ul li{
+		margin:0px;
+		padding:0px;
+		float:left;
+		border:1px solid #CCC;
+	}
+
+#map{
+	height:300px;
+	background:#CCC;
+	margin-bottom:40px;
+}
+
+ul.city_list{
+	margin:0px;
+	padding:0px;
+	list-style:none;
+	margin-bottom:30px;
+}
+	ul.city_list li{
+		padding:3px;
+	}
+	ul.city_list li.title, div.subtitle{
+		background-color: #F2F2F2;
+	    border-bottom: medium none;
+	    border-top: 1px solid #E2E2E2;
+	    padding: 4px 5px 5px;
+		margin-bottom:5px;
+		/*
+		font-weight:bold;
+		border-bottom:1px solid #CCC;
+		margin-bottom:5px;
+		*/
+	}
+	ul.city_list li a{
+		padding-left:15px;
+		display:block;
+		padding-top:2px;
+		padding-bottom:2px;
+	}
+	ul.city_list li a:hover{
+		
+		background: #fafafa;
+	}
+	
+	ul.city_list ul.pico_thumbs{
+		margin:0px;
+		padding:0px;
+		list-style:none;
+		display:block;
+		margin-left:10px;
+		margin-bottom:80px;
+	}
+		ul.city_list ul.pico_thumbs li{
+			width:75px;
+			float:left;			
+		}
+		ul.city_list ul.pico_thumbs li a{
+			padding:0px;
+		}
+		ul.city_list ul.pico_thumbs li a:hover{
+			
+		}
+	
+	
+	ul.city_list ul li a img{
+		border:none;
+		padding:0px;
+	}
+	ul.city_list ul li a:hover{
+		border:none;
+	}
+	div.subtitle{
+		margin-top:15px;
+	}
+	
+div#big_image div.label{
+	background:#000;
+	color:#FFF;
+	padding:8px;
+}	
+
+
+ul.imgs_list{
+	margin:0px;
+	padding:0px;
+	list-style:none;
+}
+ul.imgs_list li{
+	width:100px;
+	float:left;
+	padding:10px 0px 10px 0px;
+	border:none;
+	text-align:center;
+	font-size:10px;
+}
+img.thumb{
+	border:none;
+}
+
+div#message div{
+	text-align:center;
+	padding:10px;
+	margin:10px 0px 10px 0px;
+}
+div#message div div.title{
+	font-weight:bold;
+	font-size:15px;
+	margin-bottom:10px;
+}
+div#message div.error{
+	border:1px solid #facade;
+	background:#fde9f1;
+}
+div#message div.success{
+	border:1px solid #b2fad6;
+	background:#e2fdef;
+}
+div#message div.info{
+	border:1px solid #c1effe;
+	background:#f3fcff;
+}
+

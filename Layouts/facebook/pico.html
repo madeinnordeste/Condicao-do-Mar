@@ -1,0 +1,171 @@
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title>Condição do Mar</title>
+		<link rel='stylesheet' href='css/grid.css' type='text/css' media='all' />
+		<link rel='stylesheet' href='css/style.css' type='text/css' media='all' />	
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.5.2.min.js"></script>		
+	</head>
+	<body>
+		<div class="container_8">
+			
+			<div id="header" class="grid_8 alpha omega">
+				<h1>Secret Point</h1>
+			</div>
+			<div class="clear"></div>
+			
+			<div id="big_image" class="grid_8 alpha omega">
+				<img src="img/big.jpg" alt="Secret Point - 21/05/2011 09:20" width="504" height="300" />
+				<div class="label">
+					21/05/2011 09:20 
+				</div>
+			</div>
+			<div class="clear"></div>
+			
+			<div id="list_images">
+				
+				<div class="subtitle">Outras imagens</div>
+				
+				<ul class="imgs_list">
+					<li>
+						<a href="#" title="Secret Point - 21/05/2011 09:20">
+							<img class="thumb" src="img/thumb.png" alt="Secret Point - 21/05/2011 09:20" />
+							<br />
+							21/05/2011<br>
+							09:20
+						</a>
+					</li>
+					<li>
+						<a href="#" title="Secret Point - 21/05/2011 09:20">
+							<img class="thumb" src="img/thumb.png" alt="Secret Point - 21/05/2011 09:20" />
+							<br />
+							21/05/2011<br>
+							09:20
+						</a>
+					</li>
+					<li>
+						<a href="#" title="Secret Point - 21/05/2011 09:20">
+							<img class="thumb" src="img/thumb.png" alt="Secret Point - 21/05/2011 09:20" />
+							<br />
+							21/05/2011<br>
+							09:20
+						</a>
+					</li>
+					<li>
+						<a href="#" title="Secret Point - 21/05/2011 09:20">
+							<img class="thumb" src="img/thumb.png" alt="Secret Point - 21/05/2011 09:20" />
+							<br />
+							21/05/2011<br>
+							09:20
+						</a>
+					</li>
+					<li>
+						<a href="#" title="Secret Point - 21/05/2011 09:20">
+							<img class="thumb" src="img/thumb.png" alt="Secret Point - 21/05/2011 09:20" />
+							<br />
+							21/05/2011<br>
+							09:20
+						</a>
+					</li>
+					<li>
+						<a href="#" title="Secret Point - 21/05/2011 09:20">
+							<img class="thumb" src="img/thumb.png" alt="Secret Point - 21/05/2011 09:20" />
+							<br />
+							21/05/2011<br>
+							09:20
+						</a>
+					</li>
+					<li>
+						<a href="#" title="Secret Point - 21/05/2011 09:20">
+							<img class="thumb" src="img/thumb.png" alt="Secret Point - 21/05/2011 09:20" />
+							<br />
+							21/05/2011<br>
+							09:20
+						</a>
+					</li>
+					<li>
+						<a href="#" title="Secret Point - 21/05/2011 09:20">
+							<img class="thumb" src="img/thumb.png" alt="Secret Point - 21/05/2011 09:20" />
+							<br />
+							21/05/2011<br>
+							09:20
+						</a>
+					</li>
+					<li>
+						<a href="#" title="Secret Point - 21/05/2011 09:20">
+							<img class="thumb" src="img/thumb.png" alt="Secret Point - 21/05/2011 09:20" />
+							<br />
+							21/05/2011<br>
+							09:20
+						</a>
+					</li>
+					<li>
+						<a href="#" title="Secret Point - 21/05/2011 09:20">
+							<img class="thumb" src="img/thumb.png" alt="Secret Point - 21/05/2011 09:20" />
+							<br />
+							21/05/2011<br>
+							09:20
+						</a>
+					</li>	
+					<li>
+						<a href="#" title="Secret Point - 21/05/2011 09:20">
+							<img class="thumb" src="img/thumb.png" alt="Secret Point - 21/05/2011 09:20" />
+							<br />
+							21/05/2011<br>
+							09:20
+						</a>
+					</li>
+					<li>
+						<a href="#" title="Secret Point - 21/05/2011 09:20">
+							<img class="thumb" src="img/thumb.png" alt="Secret Point - 21/05/2011 09:20" />
+							<br />
+							21/05/2011<br>
+							09:20
+						</a>
+					</li>
+					<li>
+						<a href="img/big.jpg" title="Secret Point - 21/05/2011 09:20a">
+							<img class="thumb" src="img/thumb.png" alt="Secret Point - 21/05/2011 09:20a" />
+							<br />
+							21/05/2011<br>
+							09:20
+						</a>
+					</li>				
+				</ul>
+				
+			</div>
+			
+		</div>
+		<div id="fb-root"></div>
+		       <script>
+		           window.fbAsyncInit = function() {
+		               FB.init({appId: "174717269243992",
+		                                  status: true,
+		                                  cookie: true,
+		                                  xfbml: true});
+
+		               FB.Canvas.setAutoResize(); 
+		           };
+		           (function() {
+		               var e = document.createElement('script'); e.async = true;
+		               e.src = document.location.protocol +
+		                   '//connect.facebook.net/en_US/all.js';
+		               document.getElementById('fb-root').appendChild(e);
+		           }());
+		
+		
+					$(document).bind('ready', function(){
+						$('ul.imgs_list li a').live('click', function(evt){
+							evt.preventDefault();
+							img = $(this).attr('href');
+							desc = $(this).attr('title');
+							
+							$('div#big_image img').attr('src', img);
+							$('div#big_image div').html(desc);
+							
+						});
+					})
+		
+		       </script>
+	</body>
+</html>
