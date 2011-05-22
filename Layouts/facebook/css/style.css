@@ -145,4 +145,32 @@ div#message div.info{
 	border:1px solid #c1effe;
 	background:#f3fcff;
 }
-
+.center{
+	text-align:center;
+}
+div.table_fields{
+	border-bottom: 1px solid #E2E2E2;
+	font-weight:bold;	
+}
+div.table_values{
+	border-bottom: 1px dashed #E2E2E2;
+}
+	div.table_fields div, div.table_values div{
+		padding-top:3px;
+		padding-bottom:5px;
+	}
+div.table_hidden{
+	display:none;
+}
+div.table_expand{
+	text-align:right;
+	padding:4px 0px 4px 0px;
+}
+div.table_expand a{
+	padding:4px;
+}
+	div.table_expand a:hover{
+		background:#3B5998;
+		color:#FFF;
+	
+	}
