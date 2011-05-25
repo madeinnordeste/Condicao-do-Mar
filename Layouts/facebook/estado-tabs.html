@@ -1,0 +1,482 @@
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title>Condição do Mar</title>
+		<link rel='stylesheet' href='css/grid.css' type='text/css' media='all' />
+		<link rel='stylesheet' href='css/style.css' type='text/css' media='all' />	
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.5.2.min.js"></script>		
+	</head>
+	<body>
+		<div class="container_8">
+			
+			<div class="grid_8 alpha omega tabs">
+				<ul>
+					<li><a href="#tab1">Mapa</a></li>
+					<li><a href="#tab2">Tábua da Maré</a></li>
+					<li><a href="#tab3">Outra Div</a></li>
+				</ul>
+				<!-- Primeira tab//-->
+				<div id="tab1" class="tab">
+					
+					<!-- mapa //-->
+					<div id="map">
+						mapa
+					</div>
+					<!-- final mapa //-->
+					
+				</div>
+				<!-- Segunda tab//-->
+				<div id="tab2" class="tab">
+					
+					<!-- tabua da mare //-->
+					<div class="grid_8 alpha omega table_fields">
+						<div class="grid_2 alpha center">
+							Dia
+						</div>
+						<div class="grid_2 center">
+							Lua
+						</div>
+						<div class="grid_4 omega center">
+							Variações
+						</div>				
+					</div>
+					<div class="clear"></div>
+
+
+					<div class="grid_8 alpha omega table_values">
+						<div class="grid_2 alpha center">
+							12, May, 2011
+						</div>
+						<div class="grid_2 center">
+							gibosa
+						</div>
+						<div class="grid_4 omega center">
+							<div>
+								9:45 - 0.9m
+							</div>
+							<div>
+								11:45 - 0.6m
+							</div>
+							<div>
+								18:10 - 22.9m
+							</div>
+
+						</div>				
+					</div>
+					<div class="clear"></div>
+
+					<div class="grid_8 alpha omega table_values table_hidden">
+						<div class="grid_2 alpha center">
+							12, May, 2011
+						</div>
+						<div class="grid_2 center">
+							gibosa
+						</div>
+						<div class="grid_4 omega center">
+							<div>
+								9:45 - 0.9m
+							</div>
+							<div>
+								11:45 - 0.6m
+							</div>
+							<div>
+								18:10 - 22.9m
+							</div>
+
+						</div>				
+					</div>
+					<div class="clear"></div>
+
+					<div class="grid_8 alpha omega table_values table_hidden">
+						<div class="grid_2 alpha center">
+							12, May, 2011
+						</div>
+						<div class="grid_2 center">
+							gibosa
+						</div>
+						<div class="grid_4 omega center">
+							<div>
+								9:45 - 0.9m
+							</div>
+							<div>
+								11:45 - 0.6m
+							</div>
+							<div>
+								18:10 - 22.9m
+							</div>
+
+						</div>				
+					</div>
+					<div class="clear"></div>
+
+					<div class="grid_8 alpha omega table_values table_hidden">
+						<div class="grid_2 alpha center">
+							12, May, 2011
+						</div>
+						<div class="grid_2 center">
+							gibosa
+						</div>
+						<div class="grid_4 omega center">
+							<div>
+								9:45 - 0.9m
+							</div>
+							<div>
+								11:45 - 0.6m
+							</div>
+							<div>
+								18:10 - 22.9m
+							</div>
+
+						</div>				
+					</div>
+					<div class="clear"></div>
+
+					<div class="grid_8 alpha omega table_values table_hidden">
+						<div class="grid_2 alpha center">
+							12, May, 2011
+						</div>
+						<div class="grid_2 center">
+							gibosa
+						</div>
+						<div class="grid_4 omega center">
+							<div>
+								9:45 - 0.9m
+							</div>
+							<div>
+								11:45 - 0.6m
+							</div>
+							<div>
+								18:10 - 22.9m
+							</div>
+							<div>
+								18:10 - 22.9m
+							</div>
+							<div>
+								18:10 - 22.9m
+							</div>
+							<div>
+								18:10 - 22.9m
+							</div>
+							<div>
+								18:10 - 22.9m
+							</div>
+							<div>
+								18:10 - 22.9m
+							</div>
+
+						</div>				
+					</div>
+					<div class="clear"></div>
+
+					<div class="grid_8 alpha omega table_expand">
+						<a href="#table_wave_title" id="action_expand_table">
+							Expandir / Comprimir
+						</a>
+					</div>
+					<!-- tabua da mare //-->
+					
+				</div>
+				<!-- Terceira tab//-->
+				<div id="tab3" class="tab">
+					
+					<div>
+						outra div
+					</div>
+					
+				</div>
+			</div>
+			<div class="clear"></div>
+			<script type="text/javascript">
+				$(document).bind('ready', function(){
+					$('div.tabs ul li a').live('click', function(evt){
+						evt.preventDefault();
+						$('div.tabs ul li a').removeClass('active');
+						$(this).addClass('active');
+						$('div.tabs div.tab').hide();
+						var t = $(this).attr('href');
+						$(t).show();
+					});
+					$('div.tabs div.tab:first').show();
+					$('div.tabs ul li a:first').addClass('active');
+				});
+			</script>
+			
+			
+			
+			
+			<div class="clear"></div>
+			
+			
+			<br><br><br><br>
+			
+			<div id="list">
+				
+				<ul class="city_list">
+					<li class="title">Maceió</li>
+					<li class="weather">
+						<img src="http://dummyimage.com/40x40/CCC/fff.png&text=a" alt="Nublado" />
+						Nublado, 20C<br>
+						Vento: NO a 11Kh/h, Umidade: 83%
+					</li>
+					<li>
+						<a href="#">Solares</a>						
+						<ul class="pico_thumbs">
+							<li>
+								<a href="#">
+									<img src="img/thumb.png" alt="" />
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="img/thumb.png" alt="" />
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="img/thumb.png" alt="" />
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="img/thumb.png" alt="" />
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="img/thumb.png" alt="" />
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="img/thumb.png" alt="" />
+								</a>
+							</li>
+						</ul>						
+					</li>
+					<li>
+						<a href="#">Pontal</a>						
+						<ul class="pico_thumbs">
+							<li>
+								<a href="#">
+									<img src="img/thumb.png" alt="" />
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="img/thumb.png" alt="" />
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="img/thumb.png" alt="" />
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="img/thumb.png" alt="" />
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="img/thumb.png" alt="" />
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="img/thumb.png" alt="" />
+								</a>
+							</li>
+						</ul>						
+					</li>	
+					<li>
+						<a href="#">Jacarecica</a>						
+						<ul class="pico_thumbs">
+							<li>
+								<a href="#">
+									<img src="img/thumb.png" alt="" />
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="img/thumb.png" alt="" />
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="img/thumb.png" alt="" />
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="img/thumb.png" alt="" />
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="img/thumb.png" alt="" />
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="img/thumb.png" alt="" />
+								</a>
+							</li>
+						</ul>						
+					</li>				
+					
+				</ul>
+				
+				
+					<ul class="city_list">
+						<li class="title">Marechal</li>
+						<li class="weather">
+							<img src="http://dummyimage.com/40x40/CCC/fff.png&text=a" alt="Nublado" />
+							Nublado, 20C<br>
+							Vento: NO a 11Kh/h, Umidade: 83%
+						</li>
+						<li>
+							<a href="#">Solares</a>						
+							<ul class="pico_thumbs">
+								<li>
+									<a href="#">
+										<img src="img/thumb.png" alt="" />
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img src="img/thumb.png" alt="" />
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img src="img/thumb.png" alt="" />
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img src="img/thumb.png" alt="" />
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img src="img/thumb.png" alt="" />
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img src="img/thumb.png" alt="" />
+									</a>
+								</li>
+							</ul>						
+						</li>
+						<li>
+							<a href="#">Pontal</a>						
+							<ul class="pico_thumbs">
+								<li>
+									<a href="#">
+										<img src="img/thumb.png" alt="" />
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img src="img/thumb.png" alt="" />
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img src="img/thumb.png" alt="" />
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img src="img/thumb.png" alt="" />
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img src="img/thumb.png" alt="" />
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img src="img/thumb.png" alt="" />
+									</a>
+								</li>
+							</ul>						
+						</li>	
+						<li>
+							<a href="#">Jacarecica</a>						
+							<ul class="pico_thumbs">
+								<li>
+									<a href="#">
+										<img src="img/thumb.png" alt="" />
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img src="img/thumb.png" alt="" />
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img src="img/thumb.png" alt="" />
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img src="img/thumb.png" alt="" />
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img src="img/thumb.png" alt="" />
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img src="img/thumb.png" alt="" />
+									</a>
+								</li>
+							</ul>						
+						</li>				
+
+					</ul>
+				
+				
+			
+				
+			</div>
+			
+		</div>
+		
+		<div id="fb-root"></div>
+		       <script>
+		           window.fbAsyncInit = function() {
+		               FB.init({appId: "174717269243992",
+		                                  status: true,
+		                                  cookie: true,
+		                                  xfbml: true});
+
+		               FB.Canvas.setAutoResize(); 
+		           };
+		           (function() {
+		               var e = document.createElement('script'); e.async = true;
+		               e.src = document.location.protocol +
+		                   '//connect.facebook.net/en_US/all.js';
+		               document.getElementById('fb-root').appendChild(e);
+		           }());
+		
+					$(document).bind('ready', function(){
+						
+						$('a#action_expand_table').live('click', function(evt){
+							//evt.preventDefault();
+							$('div.table_hidden').toggle();
+						});
+						
+					});
+		
+			
+		
+		       </script>
+	</body>
+</html>
